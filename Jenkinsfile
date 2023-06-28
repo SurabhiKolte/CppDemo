@@ -1,6 +1,8 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent any
+    agent {
+        docker { image 'marcusmaximus/cpp-project-build' }
+    }
 
     stages {
         stage('Build') {
