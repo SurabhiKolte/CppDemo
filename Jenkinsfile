@@ -1,7 +1,7 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
     agent {
-        docker { image 'marcusmaximus/cpp-project-build' }
+        docker { image 'wsydgx/cpp-build-tool' }
     }
 
     stages {
